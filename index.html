@@ -323,16 +323,16 @@ const schedule = [
   /* 10*/ [REST, R(3), R(7), R(4), REST, R(13), CROSS],
   /* 11*/ [REST, R(3), R(7), R(4), REST, R(14), CROSS],
   /* 12*/ [REST, R(3), R(7), R(4), REST, R(16), CROSS],
-  // From uploaded image (weeks 13-21):
-  /* 13*/ [REST, R(3), R(7),  R(4), REST, R(14),          CROSS],
-  /* 14*/ [REST, R(4), R(8),  R(4), REST, R(16),          CROSS],
-  /* 15*/ [REST, R(4), R(8),  R(5), REST, R(18),          CROSS],
-  /* 16*/ [REST, R(4), R(9),  R(5), REST, R(14),          CROSS],
-  /* 17*/ [REST, R(5), R(9),  R(5), REST, R(20),          CROSS],
-  /* 18*/ [REST, R(5), R(10), R(5), REST, R(16),          CROSS],
-  /* 19*/ [REST, R(5), R(8),  R(4), REST, RN('20-22 mi', 21), CROSS],
-  /* 20*/ [REST, R(4), R(6),  R(3), REST, R(15),          CROSS],
-  /* 21*/ [REST, R(3), R(4),  R(2), REST, REST,           MARATHON],
+  // Weeks 13-21: injury-adjusted plan
+  /* 13*/ [REST, R(3), R(7),  R(4), REST, R(14), CROSS],
+  /* 14*/ [R(3), CROSS, R(5), CROSS, RN('3-4 mi', 3.5), RN('8-10 mi', 9), REST],
+  /* 15*/ [REST, RN('4-5 mi', 4.5), RN('5-6 mi', 5.5), REST, R(4), RN('10-12 mi', 11), CROSS],
+  /* 16*/ [REST, R(4), RN('5-6 mi', 5.5), REST, R(4), RN('12-14 mi', 13), CROSS],
+  /* 17*/ [REST, R(5), R(6),  REST, R(4), RN('14-16 mi', 15), CROSS],
+  /* 18*/ [REST, R(5), R(7),  REST, R(4), RN('16-18 mi', 17), CROSS],
+  /* 19*/ [REST, R(5), R(8),  REST, R(4), RN('18-20 mi (if pain-free)', 19), CROSS],
+  /* 20*/ [REST, R(4), R(6),  REST, R(3), RN('12-14 mi', 13), CROSS],
+  /* 21*/ [REST, R(3), R(4),  R(2), REST, REST, MARATHON],
 ];
 
 const DAYS = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
